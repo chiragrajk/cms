@@ -4024,6 +4024,11 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
+
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"
@@ -5302,6 +5307,11 @@ pkg-dir@^2.0.0:
   integrity sha1-9tXREJ4Z1j7fQo4L1X4Sd3YVM0s=
   dependencies:
     find-up "^2.1.0"
+
+popper.js@^1.14.5:
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.5.tgz#98abcce7c7c34c4ee47fcbc6b3da8af2c0a127bc"
+  integrity sha512-fs4Sd8bZLgEzrk8aS7Em1qh+wcawtE87kRUJQhK6+LndyV1HerX7+LURzAylVaTyWIn5NTB/lyjnWqw/AZ6Yrw==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
