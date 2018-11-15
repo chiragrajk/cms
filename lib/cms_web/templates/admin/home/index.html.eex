@@ -6,7 +6,7 @@
       <div class="card-body">
         <div class="progress">
           <div class="progress-bar bg-success" 
-            style="width:<%= 100*(@context.published_posts/ 1 || @context.total_posts) %>%">
+            style="width:<%= 100*(@context.published_posts/1 || @context.total_posts) %>%">
             Published
           </div>
           <div class="progress-bar bg-warning" 
