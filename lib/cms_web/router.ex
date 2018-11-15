@@ -28,8 +28,8 @@ defmodule CmsWeb.Router do
   scope "/", CmsWeb do
     pipe_through :browser
 
-    resources("/session", SessionController, only: [:create, :new]) 
     delete("/logout", SessionController, :delete)
+    resources("/session", SessionController, only: [:create, :new]) 
 
     resources("/", PageController, only: [:index, :show])
   end

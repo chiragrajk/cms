@@ -24,7 +24,7 @@
 
         <li class="nav-item">
         <%= if Cms.Auth.Accounts.get_current_user(@conn) do %>
-          <%= link("Logout", to: "/logout", method: :delete, class: "nav-link") %>
+          <%= link("Logout", to: Routes.session_path(@conn, :delete), method: :delete, class: "nav-link") %>
         <% else %>
           <%= link("Login", to: Routes.session_path(@conn, :new), class: "nav-link") %>
         <% end %>
