@@ -5,6 +5,11 @@ defmodule Cms.Content.Blog do
 
   import Ecto.Query
 
+  def get_posts_list() do
+    Repo.all(from p in Post,
+    preload: :user)
+  end
+
   def get_published_posts() do
     Repo.all(
       from p in Post,

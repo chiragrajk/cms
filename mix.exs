@@ -47,6 +47,7 @@ defmodule Cms.MixProject do
       # User authentication
       {:comeonin, "~> 4.1.1"},
       {:bcrypt_elixir, "~> 1.0"},
+      {:guardian, "~> 1.0"},
 
       {:slugger, "~> 0.3"},
       {:timex, "~> 3.1"},
