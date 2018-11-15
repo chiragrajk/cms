@@ -16,7 +16,7 @@ defmodule CmsWeb.Router do
   scope "/", CmsWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    resources("/", PageController, only: [:index, :show])
   end
 
   # Other scopes may use custom stacks.

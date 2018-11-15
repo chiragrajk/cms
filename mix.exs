@@ -49,6 +49,8 @@ defmodule Cms.MixProject do
       {:bcrypt_elixir, "~> 1.0"},
 
       {:slugger, "~> 0.3"},
+      {:timex, "~> 3.1"},
+      {:earmark, "~> 1.3.0"}
       # {:arc, "~> 0.11.0"}, # for file upload
       # {:arc_ecto, "~> 0.11.0"}
     ]
