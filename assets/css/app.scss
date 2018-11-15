@@ -3,3 +3,10 @@ $fa-font-path: "/fonts/font-awesome"; // font-awesome: new path for fonts
 @import '~bootstrap/scss/bootstrap.scss';
 
 @import "./home";
+@import "./sidebar";
+@import "./navbar";
+@import "./alert";
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
