@@ -1,5 +1,5 @@
-// $fa-font-path: "~font-awesome/fonts";
-// @import '~font-awesome/scss/font-awesome.scss';
+$fa-font-path: "/fonts/font-awesome"; // font-awesome: new path for fonts
+@import '~font-awesome/scss/font-awesome.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 
 @import "./home";
