@@ -11,7 +11,7 @@ import css from "../css/app.scss"
 //
 // Import dependencies
 //
-import "phoenix_html"
+// import "phoenix_html"
 
 // Import local files
 //
