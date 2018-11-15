@@ -20,12 +20,17 @@ defmodule CmsWeb.Router do
   scope "/admin", CmsWeb, as: :admin do
     pipe_through [:browser, :authenticated]
     get "/", Admin.HomeController, :index
+    resources("/post", Admin.PostController) do
+      get("/publish", Admin.PostController, :publish, as: :publish)
+    end
   end
 
   scope "/", CmsWeb do
     pipe_through :browser
 
-    resources("/session", SessionController, only: [:create, :new, :delete])
+    resources("/session", SessionController, only: [:create, :new]) 
+    delete("/logout", SessionController, :delete)
+
     resources("/", PageController, only: [:index, :show])
   end
 

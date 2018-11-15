@@ -1,20 +1,18 @@
-# Cms
+# Content Management System
 
-To start your Phoenix server:
+Simple and Extensible Blog App built on Phoenix framework in Elixir.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+## Features
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+* Ready to use blog engine
+* Customizable templates
+* Slug based routes
+* Cover image for post
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Get Started
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+* Clone repository `git clone https://github.com/chiragrajk/cms.git`
+* Fetch dependencies with `cd cms && mix deps.get`
+* Setup database and seed data `mix ecto.setup`
+* Install Node.js dependencies with `cd assets && npm install`
+* Start Phoenix server `mix phx.server`

@@ -12,6 +12,14 @@ defmodule Cms.Auth.Accounts do
     Guardian.Plug.current_resource(conn)
   end
 
+  def is_current_user_admin?(conn) do
+    user = Guardian.Plug.current_resource(conn)
+    case user do
+      nil -> false
+      user -> user.is_admin
+    end
+  end
+
   def authenticate_user(email, given_password) do
     query = from(u in User, where: u.email == ^email)
     Repo.one(query)
