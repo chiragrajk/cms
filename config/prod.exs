@@ -20,7 +20,7 @@ config :cms, CmsWeb.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :cms, Hello.Repo,
+config :cms, Cms.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
