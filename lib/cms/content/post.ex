@@ -24,7 +24,7 @@ defmodule Cms.Content.Post do
   def create_changeset(post, attrs) do
     post
     |> common_changeset(attrs)
-    |> validate_required([:user_id, :cover])
+    |> validate_required([:user_id])
   end
 
   def common_changeset(changeset, attrs) do

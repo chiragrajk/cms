@@ -47,4 +47,11 @@ defmodule CmsWeb.Admin.PostController do
     end
   end
 
+  def delete(conn, %{"id" => id}) do
+    with %Post{} = post <- Blog.get(id),
+          {:ok, _post} <- Blog.delete(post) do
+            redirect(conn, to: Routes.admin_post_path(conn, :index))
+    end
+  end
+
 end

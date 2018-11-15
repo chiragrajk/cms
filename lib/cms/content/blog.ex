@@ -26,5 +26,33 @@ defmodule Cms.Content.Blog do
     get(slug)
     |> Repo.preload([:user])
   end
+
+  def create(post, user) do
+    post = Map.put(post, "user_id", user.id)
+    changeset = Post.create_changeset(%Post{}, post)
+    case changeset.valid? do
+      true -> Repo.insert(changeset)
+      false -> {:error, changeset}
+    end
+  end
+
+  def update(post, params) do
+    changeset = Post.common_changeset(post, params)
+    case changeset.valid? do
+      true -> Repo.update(changeset)
+      false -> {:error, changeset}
+    end
+  end
+
+  def publish(post) do
+    post
+    |> Post.common_changeset(%{published: not post.published})
+    |> Repo.update
+  end
+
+  def delete(post) do
+    Repo.delete(post)
+    
+  end
   
 end
