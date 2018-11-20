@@ -53,7 +53,7 @@ defmodule Cms.MixProject do
       {:timex, "~> 3.1"},
       {:earmark, "~> 1.3.0"}
       # {:arc, "~> 0.11.0"}, # for file upload
-      # {:arc_ecto, "~> 0.11.0"}
+      # {:arc_ecto, "~> 0.11.0"} # doesnt support ecto 3.0 yet
     ]
   end
 
